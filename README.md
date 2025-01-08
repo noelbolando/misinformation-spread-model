@@ -28,7 +28,12 @@ SEHIR models explore the interaction of agents within 5 different agent states:
 2. E - agents exposed to misinformation.
 3. H - hibernating agents; exposed to misinformation but not interacting with or spreading it, at first.
 4. I - infected agents; exposed to misinformation and spreading it.
-5. R - resistant/recovered/removed agents; these agents are either (A) not exposed to misinformation (perhaps they're not active on the socials), for the sake of this study, these agents would be considered "resistant" or (B) exposed to misinformation but "recovered" in the sense that they were exposed to it but never infected. 
+5. R - resistant/recovered/removed agents; these agents are either (A) not exposed to misinformation (perhaps they're not active on the socials), for the sake of this study, these agents would be considered "resistant" or (B) exposed to misinformation but "recovered" in the sense that they were exposed to it but never infected.
+
+I created a little diagram below to understand the relationship between these agents, don't mind the math for now, I'll explain that in more detail later on.
+
+![SEHIR drawio](https://github.com/user-attachments/assets/a911d3db-ba91-4b80-9160-25455d8f7f15)
+
 
 ## Further Reading ##
 
