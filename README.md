@@ -32,7 +32,8 @@ SEHIR models explore the interaction of agents within 5 different agent states:
 
 I created a little diagram below to understand the relationship between these agents. 
 
-![SEHIR drawio](https://github.com/user-attachments/assets/a911d3db-ba91-4b80-9160-25455d8f7f15)
+![SEHIR](https://github.com/user-attachments/assets/56794b54-d640-417d-a736-3b3295be1cdf)
+SEHIR Diagram for this Misinformation Model
 
 Notice the continuous lines between the different agents; this explains how agents change states/interact with other agents in the model. For example, a susceptible (S) agent can become an exposed (E) when exposed to misinformation. The equation that governs this behavior is given above the arrow. 
 
