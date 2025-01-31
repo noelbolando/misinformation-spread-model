@@ -44,15 +44,33 @@ model_params = {
         max=8,
         step=1
     ),
-    "initial_outbreak_size": Slider(
+    # Misinformation transmission coefficient
+    "n2": Slider(
         label="Initial Outbreak Size",
         value=1,
         min=1,
         max=10,
         step=1
     ),
-    "virus_spread_chancee": Slider(
-        label="Infection Rate",
+    # Transimission rate from H -> I
+    "b1": Slider(
+        label="Hibernator Infection Rate",
+        value=0.5,
+        min=0.0,
+        max=1.0,
+        step=0.1
+    ),
+    # Transimission rate from E -> H
+    "b2": Slider(
+        label="Hibernator Exposure Rate",
+        value=0.5,
+        min=0.0,
+        max=1.0,
+        step=0.1
+    ),
+    # Transmission rate from E -> I
+    "b3": Slider(
+        label="Exposed Infection Rate",
         value=0.5,
         min=0.0,
         max=1.0,
@@ -65,15 +83,33 @@ model_params = {
         max=1.0,
         step=0.1
     ),
-    "recovery_chance": Slider(
-        label="Chance of Recovery",
+    # Recovery rate from S -> R
+    "b4": Slider(
+        label="Susceptible Recovery Rate",
         value=0.5,
         min=0.0,
         max=1.0,
         step=0.1
     ),
-    "gain_rresistance_chance": Slider(
-        label="Chance of Gaining Resistance",
+    # Recovery rate from E -> R
+    "b5": Slider(
+        label="Exposed Recovery Rate",
+        value=0.5,
+        min=0.0,
+        max=1.0,
+        step=0.1
+    ),
+    # Recovery rate from H -> R
+    "l2": Slider(
+        label="Hibernator Recovery Rate",
+        value=0.5,
+        min=0.0,
+        max=1.0,
+        step=0.1
+    ),
+    # Recovery rate from I -> R
+    "l3": Slider(
+        label="Infected Recovery Rate",
         value=0.5,
         min=0.0,
         max=1.0,
