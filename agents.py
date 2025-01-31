@@ -49,7 +49,9 @@ class MisinformationAgent(Agent):
         self.l2 = l2
         self.l3 = l3
     
-    """General function for exploring the local neighborhood."""
+    """
+    General function for exploring the local neighborhood
+    """
     def neighborhood_explorer(self):
         neighbors_nodes = self.model.grid.get_neighborhood(
             self.pos, include_center=False
