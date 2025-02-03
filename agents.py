@@ -21,6 +21,7 @@ class MisinformationAgent(Agent):
             model,
             initial_state,
             
+            virus_check_frequency, # check the status of infected agents
             mu, # the rate of deactivation for users
             n2, # misinformation transmission coefficient
             phi, # when phi=0, there will be no misinforamtion, when phi=1 agent will spread disinformation
@@ -38,6 +39,7 @@ class MisinformationAgent(Agent):
         self.state = initial_state
 
         # Define the properties of the agents
+        self.virus_check_frequency = virus_check_frequency
         self.n2 = n2
         self.phi = phi
         self.mu = mu
